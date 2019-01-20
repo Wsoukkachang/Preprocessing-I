@@ -208,6 +208,7 @@ p {
 .btn {
   width: 30%;
   height: 45px;
+  text-decoration: none;
   background-color: #767676;
   border-radius: 5px;
   font-size: 1.8rem;
@@ -215,6 +216,20 @@ p {
   text-align: center;
   line-height: 45px;
   vertical-align: middle;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+}
+
+.btn a:visited {
+  color: #FFFFFF;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -284,4 +299,54 @@ padding: 5% 2%;
   font-size: 1.6rem;
   text-align: center;
 }
+
+.contact a {
+  font-size: 1.6rem;
+  text-align: center;
+}
   
+/* At 500px (Mobile) and below do the following: */
+
+@media all and (max-width: 500px) {
+  .home-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+    color: rgba(24, 132, 214, 0.377);
+    margin: 2% 0;
+  }
+  .navigation {
+    padding-bottom: 10px;
+  }
+
+  .navigation nav a {
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1.6rem;
+    color: #212529;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .mid-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .header, .listen-up, .good-at, .work-history, .contact {
+  width: 100%;
+  padding: 5% 2%;
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
