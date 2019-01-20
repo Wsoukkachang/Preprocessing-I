@@ -150,22 +150,27 @@ h1 {
   color: rgba(24, 132, 214, 0.377);
   margin: 2% 0;
 }
+
 h2 {
   font-size: 3.2rem;
-  padding-bottom: 10px;
+  color: rgba(24, 132, 214, 0.377);
+  padding: 2% 0;
 }
+
 h3 {
   font-size: 2.7rem;
-  padding-bottom: 10px;
+  padding: 2% 0;
 }
+
 h4 {
   font-size: 2rem;
-  padding-bottom: 10px;
+  padding: 2% 0;
 }
+
 p {
   line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
+  padding: 2% 0;
 }
 
 .home-container {
@@ -194,6 +199,7 @@ p {
 
 .header {
   background-color: #E6EAED;
+  border: 1px double black;
   width: 100%;
   height: 65%;
   padding: 5% 2%;
@@ -203,6 +209,10 @@ p {
   max-width: 45%;
   height: auto;
   padding-bottom: 2%;
+}
+
+hr {
+  border-top: 1px ridge black;
 }
 
 .btn {
@@ -292,17 +302,27 @@ padding: 5% 2%;
 .contact {
   background-color: rgba(24, 132, 214, 0.377);
   color: #E6EAED;
-  width: 50%;
-  border-radius: 10px;
+  width: 40%;
+  border-radius: 400px;
+  margin: 0 auto;
   padding: 2% 2%;
-  line-height: 1.5;
-  font-size: 1.6rem;
+  line-height: 1.2;
+  font-size: 1.4rem;
   text-align: center;
 }
 
 .contact a {
   font-size: 1.6rem;
   text-align: center;
+}
+
+footer {
+  background-color: #767676;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 5% 0;
+  margin: 5% 0;
 }
   
 /* At 500px (Mobile) and below do the following: */
@@ -317,7 +337,16 @@ padding: 5% 2%;
     font-size: 2.75rem;
     color: rgba(24, 132, 214, 0.377);
     margin: 2% 0;
+    margin: 0 auto;
   }
+
+  h2 {
+    font-size: 2.75rem;
+    color: rgba(24, 132, 214, 0.377);
+    margin: 2% 0;
+    margin: 0 auto;
+  }
+
   .navigation {
     padding-bottom: 10px;
   }
@@ -341,12 +370,21 @@ padding: 5% 2%;
   
   .header, .listen-up, .good-at, .work-history, .contact {
   width: 100%;
-  padding: 5% 2%;
+  margin: 0 auto;
+  padding: 2% 2%;
   }
 
   .bottom-container {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+
+  footer {
+    background-color: #767676;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+
   }
 }
