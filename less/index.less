@@ -54,6 +54,282 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+  /* mixins */
+
+  .center() {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .margin() {
+    margin: auto;
+	}
+	
+	// <!-- mixins -->
+
+  /* variables */
+
+  @bgcolor:  rgba(24, 132, 214, 0.377);;
+  @font: 'Georgia', cursive;
+
+  h1, h2, h3, h4, h5 {
+	font-family: @font;
+	}
+	
+// <!-- variable -->
+
+  h1 {
+	font-size: 4rem;
+	color: @bgcolor;
+	margin: 2% 0;
+  }
+  
+  h2 {
+	font-size: 3.2rem;
+	color: @bgcolor;
+	padding: 2% 0;
+  }
+
+  .navigation nav a:hover {
+	color: @bgcolor;
+	}
+	
+	html {
+		font-size: 62.5%;
+	}
+	
+	h3 {
+		font-size: 2.7rem;
+		padding: 2% 0;
+	}
+	
+	h4 {
+		font-size: 2rem;
+		padding: 2% 0;
+	}
+	
+	p {
+		line-height: 1.5;
+		font-size: 1.6rem;
+		padding: 2% 0;
+	}
+	
+	.home-container {
+		max-width: 840px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+	
+	.navigation {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.navigation nav a {
+		text-decoration: none;
+		margin: 0 10px;
+		font-size: 1.6rem;
+		color: #212529;
+	}
+	
+	.navigation nav a:hover {
+		color: rgba(24, 132, 214, 0.377);
+	}
+	
+	.header {
+		background-color: #E6EAED;
+		border: 1px double black;
+		width: 100%;
+		height: 65%;
+		padding: 5% 2%;
+	}
+	
+	#profile_pic {
+		max-width: 45%;
+		height: auto;
+		padding-bottom: 2%;
+	}
+	
+	hr {
+		border-top: 1px ridge black;
+	}
+	
+	.btn {
+		width: 30%;
+		height: 45px;
+		text-decoration: none;
+		background-color: #767676;
+		border-radius: 5px;
+		font-size: 1.8rem;
+		color: #FFFFFF;
+		text-align: center;
+		line-height: 45px;
+		vertical-align: middle;
+		flex-wrap: wrap;
+		cursor: pointer;
+	}
+	
+	.btn a {
+		text-decoration: none;
+		color: #FFFFFF;
+		display: block;
+	}
+	
+	.btn a:visited {
+		color: #FFFFFF;
+		background-color: transparent;
+		text-decoration: none;
+	}
+	
+	.btn:hover {
+		background-color:  rgba(24, 132, 214, 0.377);
+		color: white;
+	}
+	
+	.mid-container {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	
+	.listen-up {
+	width: 50%;
+	padding: 5% 2%;
+	}
+	
+	.good-at {
+	width: 50%;
+	padding: 5% 2%;
+	}
+	
+	.good-at li{
+		display: flex;
+		flex-direction: column;
+		height: 25%;
+		padding: 4% 2%;
+		background-color: rgba(24, 132, 214, 0.377);
+		border: 1px solid #EDEDED;   
+		vertical-align: top;
+		font-size: 1.6rem;
+	}
+	
+	.bottom-container {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	
+	.work-history {
+		width: 50%;
+		padding: 2% 2%;
+		line-height: 1.5;
+		font-size: 1.6rem;
+		padding-bottom: 10px;
+	}
+	
+	.work-history li{
+		display: flex;
+		flex-direction: column;
+		height: 15%;
+		padding: 2% 2%;
+		border: 1px solid #EDEDED;   
+		background-color: rgba(24, 132, 214, 0.377);
+		vertical-align: top;
+		font-size: 1.6rem;
+	}
+	
+	.contact {
+		background-color: rgba(24, 132, 214, 0.377);
+		color: #E6EAED;
+		width: 40%;
+		border-radius: 400px;
+		margin: 0 auto;
+		padding: 2% 2%;
+		line-height: 1.2;
+		font-size: 1.4rem;
+		text-align: center;
+	}
+	
+	.contact a {
+		font-size: 1.6rem;
+		text-align: center;
+	}
+	
+	footer {
+		background-color: #767676;
+		color: white;
+		font-size: 1.2rem;
+		text-align: center;
+		padding: 5% 0;
+		margin: 5% 0;
+	}
+		
+	/* At 500px (Mobile) and below do the following: */
+	
+	@media all and (max-width: 500px) {
+		.home-container {
+			max-width: 500px;
+			margin: 0 auto;
+		}
+	
+		h1 {
+			font-size: 2.75rem;
+			color: rgba(24, 132, 214, 0.377);
+			margin: 2% 0;
+			margin: 0 auto;
+		}
+	
+		h2 {
+			font-size: 2.75rem;
+			color: rgba(24, 132, 214, 0.377);
+			margin: 2% 0;
+			margin: 0 auto;
+		}
+	
+		.navigation {
+			padding-bottom: 10px;
+		}
+	
+		.navigation nav a {
+			text-decoration: none;
+			margin: 0 5px;
+			font-size: 1.6rem;
+			color: #212529;
+		}
+	
+		.btn {
+			width: 100%;
+		}
+	
+		.mid-container {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+		
+		.header, .listen-up, .good-at, .work-history, .contact {
+		width: 100%;
+		margin: 0 auto;
+		padding: 2% 2%;
+		}
+	
+		.bottom-container {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+	
+		footer {
+			background-color: #767676;
+			color: white;
+			font-size: 1.6rem;
+			text-align: center;
+	
+		}
+	}
